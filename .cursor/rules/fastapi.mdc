@@ -1,0 +1,23 @@
+---
+name: fastapi
+description: This rule explains the conventions and best practices for high-performance Python APIs using FastAPI. 
+globs: **/*.py
+---
+
+# FastAPI Rules
+
+- Use type hints for all function parameters and return values.
+
+- Use Pydantic models for request and response validation.
+
+- Use appropriate HTTP methods in path operation decorators (@app.get, @app.post, etc.).
+
+- Use Dependency Injection for shared logic, such as database connections and authentication.
+
+- Use background tasks for non-blocking operations.
+
+- Use appropriate status codes for responses (201 for Created, 404 for Not Found, etc.).
+
+- Use APIRouter to organize routes by feature or resource.
+
+- Use path parameters, query parameters, and request bodies appropriately.

@@ -1,0 +1,28 @@
+---
+description: This rule explains Python coding, best practices, and clean, efficient code patterns 
+globs: **/*.py
+---
+
+# Python Rules
+
+- Follow PEP 8 style guides and naming conventions.
+
+- Use type hinting to enhance code readability and type safety.
+
+- Manage dependencies using virtual environments:
+
+- Use requirements.txt to track dependencies.
+
+- Use context managers to handle resources (e.g., file operations).
+
+- Prioritize the use of list comprehensions, generator expressions, and dictionary comprehensions.
+
+- Use pytest for testing and maintain high test coverage.
+
+- Use docstrings to document functions, classes, and modules.
+
+- Adhere to Object-Oriented Design principles (SOLID).
+
+- Use exception handling to ensure program robustness.
+
+- Use dataclasses or pydantic models for data representation.

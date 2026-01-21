@@ -1,0 +1,29 @@
+services:
+  api:
+    build: .
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      # Inside Docker Compose, the API connects to MySQL by service name on port 3306.
+      DATABASE_URL: mysql+mysqlconnector://root:Mjj19940919@db:3306/student_grading_db
+    depends_on:
+      - db
+    volumes:
+      - ./uploads:/app/uploads
+
+  db:
+    image: mysql:8.0
+    container_name: stu_grd_sys
+    environment:
+      MYSQL_DATABASE: student_grading_db
+      MYSQL_ROOT_PASSWORD: "Mjj19940919"
+    ports:
+      - "4005:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+volumes:
+  mysql_data:
+

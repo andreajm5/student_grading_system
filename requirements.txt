@@ -1,0 +1,33 @@
+# FastAPI and ASGI Server
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+
+# Database ORM and MySQL Driver
+sqlmodel>=0.0.14
+mysql-connector-python>=8.2.0
+
+# Authentication and Security
+python-jose[cryptography]>=3.3.0
+passlib[bcrypt]>=1.7.4
+# passlib 1.7.x expects bcrypt metadata that was removed in bcrypt 4.x.
+# Pin bcrypt to a compatible version to avoid runtime errors in Docker.
+bcrypt<4.0.0
+
+# File Upload Support
+python-multipart>=0.0.6
+
+# Environment Variables
+python-dotenv>=1.0.0
+
+# Database Migrations
+alembic>=1.12.0
+
+# Typing for older Python versions
+typing-extensions>=4.9.0
+
+# Email Validation (for FastAPI email fields)
+email-validator>=2.1.0
+
+# Pydantic (required by SQLModel and FastAPI)
+pydantic>=2.5.0
+pydantic-settings>=2.1.0
