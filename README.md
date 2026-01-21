@@ -1,5 +1,5 @@
 
-# Student Grading System
+# Student Grading System v1.0.0
 
 An online homework collection and grading platform built with **FastAPI**, **MySQL**, **SQLModel**, and **Docker**.
 
